@@ -1,4 +1,7 @@
 .header-paper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     height: 70px;
     background: linear-gradient(-270deg, rgb(26, 126, 219), rgba(88, 247, 220, 0.7), rgb(26, 126, 219));
 }
@@ -13,7 +16,7 @@
 }
 
 .home-top-paper{
-    height: 500px;
+    height: 550px;
     background: linear-gradient(-270deg, rgb(26, 126, 219), rgba(81, 230, 205, 0.7), rgb(26, 126, 219));
 }
 
@@ -30,18 +33,18 @@
 }
 
 .home-input{
-    margin-left: 8;
+    margin-left: 8px;
     flex: 1;
   }
 
 .home-iconButton{
-    padding: 10;
+    padding: 10px;
 }
 
 .home-divider{
-    width: 1;
-    height: 28;
-    margin: 4;
+    width: 1px;
+    height: 28px;
+    margin: 4px;
 }
 
 .home-input-paper{
@@ -51,4 +54,32 @@
     align-items: center;
     display: flex;
     padding: 20px;
+}
+
+.home-list{
+    width: 600px;
+    max-width: 600px;
+    max-height: 400px;
+    overflow: auto;
+    background-color: white
+}
+
+.home-middle-paper{
+    height: 850px;
+}
+
+.home-paper-card{
+    height: 250px;
+    width: 300px;
+    background: bisque;
+}
+
+.home-middle-subheader{
+    color: rgba(87, 80, 70, 0.7)
+}
+
+.footer-container{
+    height: 200px;
+    bottom: 0px;
+    background: linear-gradient(-270deg, rgb(26, 126, 219),  rgb(26, 126, 219), rgb(26, 126, 219));
 }

@@ -12,5 +12,40 @@
             "name":"This farm 3",
             "phone":"408 799 2849"
         } 
+    ],
+    "cards1":[
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        },   
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        }, 
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        }
+    ],
+    "cards2" :[
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        }, 
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        }, 
+        {
+            "icon":"1",
+            "header":"Nice",
+            "sentence":"Nice Nice"
+        }
     ]
 }
+

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RouteHandler from './RouterHandler';
 import Header from './common/Header';
+import Footer from './common/Footer';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <div>
         <Header/>
         <RouteHandler/>
+        <Footer/>
       </div>
     );
   }
