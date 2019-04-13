@@ -1,0 +1,16 @@
+{
+    "farms": [
+        {
+            "name":"This farm 1",
+            "phone":"408 799 2869"
+        },
+        {
+            "name":"This farm 2",
+            "phone":"408 799 2849"
+        },
+        {
+            "name":"This farm 3",
+            "phone":"408 799 2849"
+        } 
+    ]
+}
