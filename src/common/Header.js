@@ -28,7 +28,7 @@ export default class Header extends React.Component{
                             <Button>Input</Button>
                         </Link>
                         <Link to="/data" style={{ textDecoration: 'none' }}>
-                            <Button>Recomendation</Button>
+                            <Button>Recommendation</Button>
                         </Link>
                         <Link to="/map" style={{ textDecoration: 'none' }}>
                             <Button>Map</Button>
