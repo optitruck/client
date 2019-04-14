@@ -16,7 +16,8 @@ The map tab will show the optimal route of the future shipment.
 
 <li>User</li>
 ​
-Views
+##Views
+
 <li>HomePage</li>
 <li>InputDataPage</li>
 <li>DataPage</li>
@@ -24,22 +25,22 @@ Views
 
 ## Routes
 
-HomePage
+##HomePage
 
 <li>GET</li>
 <li>POST</li>
 
-InputDataPage
+##InputDataPage
 
 <li>GET</li>
 <li>POST</li>
 
-DataPage
+##DataPage
 
 <li>GET</li>
 <li>POST</li>
 
-Map
+##MapPage
 
 <li>Google Maps API</li>
 
