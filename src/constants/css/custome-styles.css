@@ -83,3 +83,44 @@
     bottom: 0px;
     background: linear-gradient(-270deg, rgb(26, 126, 219),  rgb(26, 126, 219), rgb(26, 126, 219));
 }
+
+.input-top-paper{
+    height: 500px;
+}
+
+.input-middle-paper{
+    height: 250px;
+    background: linear-gradient(-270deg, rgb(26, 126, 219), rgba(81, 230, 205, 0.7), rgb(26, 126, 219));
+
+}
+
+.input-header{
+    color: black
+}
+
+.middle-box{
+    vertical-align: top;
+    margin:0 43.5% ;
+    margin-top: 1%
+}
+
+.drop-logo{
+    margin-left: 65px;
+    height: 10vmin;
+}
+
+.input-paper{
+    margin-top: 1%;
+    height: 150px;
+    width: 900px;
+}
+
+.input-form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-text-field{
+    margin-left: 5px;
+    margin-right: 5px;
+}

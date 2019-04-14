@@ -16,9 +16,13 @@ export default class Header extends React.Component{
                         OptiTruck
                     </Typography>
                     <div className="eader-titles-container">
-                        <Button color="inherit">Home</Button>
-                        <Button color="inherit">Product</Button>
-                        <Button color="inherit">About Us</Button>
+                        <Link to="/" style={{ textDecoration: 'none' }}>
+                            <Button>Home</Button>
+                        </Link>
+                        <Link to="/input" style={{ textDecoration: 'none' }}>
+                            <Button>Input</Button>
+                        </Link>
+                        <Button>About Us</Button>
                     </div>
                 </Toolbar>
             </Paper>

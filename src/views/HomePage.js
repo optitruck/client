@@ -9,7 +9,6 @@ import DirectionsIcon from '@material-ui/icons/Directions';
 import ImageIcon from '@material-ui/icons/Image';
 import report from '../constants/svg/report.svg';
 import { farms, cards1, cards2 } from '../constants/initialState.json';
-import ReactSVG from 'react-svg'
 
 
 export default class HomePage extends React.Component{
@@ -23,9 +22,9 @@ export default class HomePage extends React.Component{
         })
     }
 
-    renderLists = (props) => (
-        <div>
-            <ListItem>
+    renderLists = (props, index) => (
+        <div key={index}>
+            <ListItem >
                 <Avatar>
                     <ImageIcon />
                 </Avatar>
@@ -37,8 +36,8 @@ export default class HomePage extends React.Component{
         </div>
     )
 
-    rednerCards = (props) => (
-        <Paper className="home-paper-card">
+    rednerCards = (props, index) => (
+        <Paper key={index} className="home-paper-card">
             <Grid container direction="column" justify="space-evenly" style={{marginLeft: '10%'}}>
                 <DirectionsIcon style={{fontSize: 70, marginTop: '7%'}} />
                 <Typography variant='h4' style={{marginTop: '7%'}}>{props.header}</Typography>
@@ -67,8 +66,8 @@ export default class HomePage extends React.Component{
                         <h6 className="home-header" style={{marginTop: 10}}>Search</h6>
                     </Paper> */}
                     
-                    <IconButton className="home-iconButton" aria-label="Search">
-                        <SearchIcon onClick={this.handleList}/>
+                    <IconButton onClick={this.handleList} className="home-iconButton" aria-label="Search">
+                        <SearchIcon />
                     </IconButton>
                     <Divider className="home-divider" />
                     <IconButton color="primary" className="home-iconButton" aria-label="Directions">
@@ -79,10 +78,9 @@ export default class HomePage extends React.Component{
                     show && 
                     <div style={{marginTop: 5}}>
                         <List className="home-list">
-                            {farms.map(farm => (this.renderLists(farm)))}
+                            {farms.map((farm,index) => (this.renderLists(farm,index)))}
                         </List>
-                    </div>
-                        
+                    </div>  
                 }
                 </Grid>
             </Paper>
@@ -94,10 +92,10 @@ export default class HomePage extends React.Component{
                         telescope.
                     </p>
                     <Grid style={{marginTop: '5%'}} container direction="row" justify="space-evenly" alignItems="center">
-                        {cards1.map(card => (this.rednerCards(card)))}
+                        {cards1.map((card,index) => (this.rednerCards(card,index)))}
                     </Grid>
                     <Grid style={{marginTop: '5%'}} container direction="row" justify="space-evenly" alignItems="center">
-                        {cards2.map(card => (this.rednerCards(card)))}
+                        {cards2.map((card,index) => (this.rednerCards(card,index)))}
                     </Grid>
                 </Grid>
             </Paper>
