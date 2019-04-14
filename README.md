@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lemon
+Lemon is a food supply chain management platform for grocery store managers to analyze inventory data on food items so that they can reduce food waste by optimizing for future shipments of food.
+​
+## Problem/Audience
+ 
+ According to Business Insider and the US Department of Agriculture, 133 billion pounds of food of food waste comes from grocery stores. That is 10% of US food waste, this is clearly a problem that needs to mitigated. Our platform is designed for grocery managers to gather and analyze the data of their store's inventory to optimize future shipments of food and reduce food waste. 
 
-## Available Scripts
+Source: https://www.businessinsider.com/why-grocery-stores-throw-out-so-much-food-2014-10 
 
-In the project directory, you can run:
+## Experience
+A user navigates to the home page where he will select the store that he wants to manage. When the user clicks on the Input tab in the navbar, the user can upload a csv file or manually enter data on a food item, its supply, consumer demand and number of items spoiled. In the recommendation tab, there will be a table displaying the inventory information of the supermarket and a recommendation for future shipment supplies expressed as a percentage of items. For example, if 5% of items are spoiled, the next recommended shipment will be 5% that the prior shipment of an item.
+The map tab will show the optimal route of the future shipment.
 
-### `npm start`
+# Technical
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Models
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+<li>User</li>
+​
+Views
 
-### `npm test`
+<li>HomePage</li>
+<li>InputDataPage</li>
+<li>DataPage</li>
+<li>MapPage</li>
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Routes
 
-### `npm run build`
+HomePage
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>GET</li>
+<li>POST</li>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+InputDataPage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<li>GET</li>
+<li>POST</li>
 
-### `npm run eject`
+DataPage
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<li>GET</li>
+<li>POST</li>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+MapPage
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<li>Google Maps API</li>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Other
 
-## Learn More
+Languages: HTML, CSS, React, Node.js, 
+Technologies: AWS Amplify, Google Maps API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Colors: #FAEA15
+rgb(250,234,21)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+#000000
+rgb(0,0,0)
+​
+## Hackathon Hackathon Milestones
+- User Interace for Grocery Store Managers (React)
+- Syncing food inventory database with DataPage (AWS Amplify, DynamoDB)
+- Display route of farm and grocery store (Google Maps API)
+​
