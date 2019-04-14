@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lemon
+Lemon
+​
+## Problem/Audience
+Walking through Hyde Street in the Tenderloin district in San Francisco, our team was struck by drug use of homeless people. We were shook by the frequency of homeless people encountered in the streets considering San Francisco's advancement in the world. According to San Francisco's Department of Homelessness and Supportive Housing, 15% of homeless people suffer drug or alcohol abuse. There is a clear need to mitigate the homeless issue both from the city council and companies in the Bay Area.
 
-## Available Scripts
+Source: http://hsh.sfgov.org/wp-content/uploads/2017/06/San-Francisco-PIT-Executive-Summary-FINAL-6.21.17.pdf
 
-In the project directory, you can run:
+## Experience
+A user navigates to the home page which will be the food bank to buy food using Food Tokens. To get Food tokens, a user will have to verify his identity by inputting credentials in form. Once verified, a user will be awarded 20 Food tokens on his unique Ethereum wallet every 20 days to purchase food at the food bank.
 
-### `npm start`
+# Technical
+## Models
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<li>User</li>
+​
+## Views
+<li>Home (Food bank marketplace)</li>
+<li>Identity verification form </li>
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Routes
 
-### `npm test`
+Index/Home
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<li>GET</li>
+<li>POST</li>
 
-### `npm run build`
+Identity Verification Form
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<li>GET</li>
+<li>POST</li>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Other
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Languages: HTML, CSS, MongoDB, Node.js, Solidity
+Technologies: Ethereum, Trulioo API, Truffle, OpenZeppelin
+Colors: #3A7E4C
+​
+## AngelHack Hackathon Milestones
+- Identity verification form (Trulio API)
+- Food bank marketplace (Bootstrap)
+- Ethereum wallet (Metamask)
+- ERC20 Food token
+​
+## Demo Photos
 
-### `npm run eject`
+Home page:
+![Home page](home.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Dashboard page:
+![dashboard page](dashboard.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ID Verification form page:
+![Verification Form](IDVerify.png)
