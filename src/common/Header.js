@@ -12,17 +12,28 @@ export default class Header extends React.Component{
                     <IconButton className="header-menuButton" color="inherit" aria-label="Menu">
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" color="inherit" style={{flexGrow:1}}>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+
+                    <Typography variant="h6" style={{flexGrow:1}}>
+
                         OptiTruck
                     </Typography>
-                    <div className="eader-titles-container">
+                    </Link>
+
+                    <div className="header-titles-container">
                         <Link to="/" style={{ textDecoration: 'none' }}>
                             <Button>Home</Button>
                         </Link>
                         <Link to="/input" style={{ textDecoration: 'none' }}>
                             <Button>Input</Button>
                         </Link>
-                        <Button>About Us</Button>
+                        <Link to="/data" style={{ textDecoration: 'none' }}>
+                            <Button>Recomendation</Button>
+                        </Link>
+                        <Link to="/map" style={{ textDecoration: 'none' }}>
+                            <Button>Map</Button>
+                        </Link>
+                            <Button>About Us</Button>    
                     </div>
                 </Toolbar>
             </Paper>

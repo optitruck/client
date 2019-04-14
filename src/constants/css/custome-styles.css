@@ -7,7 +7,7 @@
 }
 
 .header-titles-container{
-    margin-left: 50px;
+    margin-left: 35%;
 }
 
 .header-menuButton{
@@ -79,9 +79,9 @@
 }
 
 .footer-container{
-    height: 200px;
+    height: 250px;
     bottom: 0px;
-    background: linear-gradient(-270deg, rgb(26, 126, 219),  rgb(26, 126, 219), rgb(26, 126, 219));
+    background: linear-gradient(-270deg, rgb(7, 90, 168),  rgb(7, 90, 168), rgb(7, 90, 168));
 }
 
 .input-top-paper{
@@ -123,4 +123,9 @@
 .input-text-field{
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.data-container{
+    height: 600px;
+    margin-top: 1px;
 }
