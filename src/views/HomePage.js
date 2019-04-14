@@ -52,10 +52,9 @@ export default class HomePage extends React.Component{
             <div>
             <Paper className="home-top-paper" square={true}> 
                 <Grid container direction="column" style={{paddingTop: '5%'}} alignItems="center">
-                <h1 className="home-header">We Choose The Best Farm Location</h1>
+                <h1 className="home-header">Welcome to Lemon</h1>
                 <p className="home-header">
-                    In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space
-                    telescope.
+                    Choose your grocery store and start reducing food waste! 
                 </p>
                 <Paper className="home-paper-search">
                     <IconButton className="home-iconButton" aria-label="Menu">
@@ -86,16 +85,12 @@ export default class HomePage extends React.Component{
             </Paper>
             <Paper className="home-middle-paper" square={true}>
                 <Grid container direction="column" alignItems="center">
-                    <Typography variant='h3' style={{marginTop: '5%'}}>Features That Make Us Hero</Typography>
+                    <Typography variant='h3' style={{marginTop: '5%'}}>3 Key Benefits of Lemon</Typography>
                     <p className="home-middle-subheader">
-                        In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space
-                        telescope.
+                        Minimize monetary losses, reduce food waste, get customer behavior insights
                     </p>
                     <Grid style={{marginTop: '5%'}} container direction="row" justify="space-evenly" alignItems="center">
                         {cards1.map((card,index) => (this.rednerCards(card,index)))}
-                    </Grid>
-                    <Grid style={{marginTop: '5%'}} container direction="row" justify="space-evenly" alignItems="center">
-                        {cards2.map((card,index) => (this.rednerCards(card,index)))}
                     </Grid>
                 </Grid>
             </Paper>

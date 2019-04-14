@@ -16,18 +16,18 @@
     "cards1":[
         {
             "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
+            "header":"Minimize Monetary Losses",
+            "sentence":"A more accurate shipment forecast will reduce the number of wasted food items"
         },   
         {
             "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
+            "header":"Reduce Food Loss",
+            "sentence":"Track items that are more frequently wasted"
         }, 
         {
             "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
+            "header":"Gather Customer Behavior Insights",
+            "sentence":"Gather knowledge on which food items are sold and wasted"
         }
     ],
     "cards2" :[
@@ -45,6 +45,24 @@
             "icon":"1",
             "header":"Nice",
             "sentence":"Nice Nice"
+        }
+    ],
+
+    "cards3" : [
+        {
+            "icon": "1",
+            "header": "Nice",
+            "sentence": "Nice Nice"
+        },
+        {
+            "icon": "1",
+            "header": "Nice",
+            "sentence": "Nice Nice"
+        },
+        {
+            "icon": "1",
+            "header": "Nice",
+            "sentence": "Nice Nice"
         }
     ]
 }
