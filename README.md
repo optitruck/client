@@ -1,5 +1,5 @@
 # Lemon
-Lemon
+Lemon is supply chain management platform for grocery managers
 ​
 ## Problem/Audience
 Walking through Hyde Street in the Tenderloin district in San Francisco, our team was struck by drug use of homeless people. We were shook by the frequency of homeless people encountered in the streets considering San Francisco's advancement in the world. According to San Francisco's Department of Homelessness and Supportive Housing, 15% of homeless people suffer drug or alcohol abuse. There is a clear need to mitigate the homeless issue both from the city council and companies in the Bay Area.
