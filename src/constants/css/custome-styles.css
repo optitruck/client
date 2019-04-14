@@ -129,3 +129,31 @@
     height: 600px;
     margin-top: 1px;
 }
+
+.footer-link{
+    color: silver
+}
+
+.footer-newleter{
+    width: 340px;
+    height: 40px;
+    /* margin-left: 8px; */
+    flex: 1;
+}
+
+.footer-input{
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.footer-button{
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(-270deg, rgb(81, 230, 205, 0.7), rgb(26, 126, 219));
+}
+
+.copy-footer{
+    color: white;
+    margin-top: 2%;
+    margin-left: -100px;
+}
