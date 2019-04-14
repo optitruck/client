@@ -1,13 +1,15 @@
 # Lemon
-Lemon is supply chain management platform for grocery managers
+Lemon is a food supply chain management platform for grocery store managers to analyze inventory data on food items so that they can reduce food waste by optimizing for future shipments of food.
 ​
 ## Problem/Audience
-Walking through Hyde Street in the Tenderloin district in San Francisco, our team was struck by drug use of homeless people. We were shook by the frequency of homeless people encountered in the streets considering San Francisco's advancement in the world. According to San Francisco's Department of Homelessness and Supportive Housing, 15% of homeless people suffer drug or alcohol abuse. There is a clear need to mitigate the homeless issue both from the city council and companies in the Bay Area.
+ 
+ According to Business Insider and the US Department of Agriculture, 133 billion pounds of food of food waste comes from grocery stores. That is 10% of US food waste, this is clearly a problem that needs to mitigated. Our platform is designed for grocery managers to gather and analyze the data of their store's inventory to optimize future shipments of food and reduce food waste. 
 
-Source: http://hsh.sfgov.org/wp-content/uploads/2017/06/San-Francisco-PIT-Executive-Summary-FINAL-6.21.17.pdf
+Source: https://www.businessinsider.com/why-grocery-stores-throw-out-so-much-food-2014-10 
 
 ## Experience
-A user navigates to the home page which will be the food bank to buy food using Food Tokens. To get Food tokens, a user will have to verify his identity by inputting credentials in form. Once verified, a user will be awarded 20 Food tokens on his unique Ethereum wallet every 20 days to purchase food at the food bank.
+A user navigates to the home page where he will select the store that he wants to manage. When the user clicks on the Input tab in the navbar, the user can upload a csv file or manually enter data on a food item, its supply, consumer demand and number of items spoiled. In the recommendation tab, there will be a table displaying the inventory information of the supermarket and a recommendation for future shipment supplies expressed as a percentage of items. For example, if 5% of items are spoiled, the next recommended shipment will be 5% that the prior shipment of an item.
+The map tab will show the optimal route of the future shipment.
 
 # Technical
 ## Models
@@ -15,40 +17,44 @@ A user navigates to the home page which will be the food bank to buy food using 
 <li>User</li>
 ​
 ## Views
-<li>Home (Food bank marketplace)</li>
-<li>Identity verification form </li>
+<li>HomePage</li>
+<li>InputDataPage</li>
+<li>DataPage</li>
+<li>MapPage</li>
 
 ## Routes
 
-Index/Home
+HomePage
 
 <li>GET</li>
 <li>POST</li>
 
-Identity Verification Form
+InputDataPage
 
 <li>GET</li>
 <li>POST</li>
+
+DataPage
+
+<li>GET</li>
+<li>POST</li>
+
+Map
+
+<li>Google Maps API</li>
 
 ## Other
 
-Languages: HTML, CSS, MongoDB, Node.js, Solidity
-Technologies: Ethereum, Trulioo API, Truffle, OpenZeppelin
-Colors: #3A7E4C
+Languages: HTML, CSS, React, Node.js, 
+Technologies: AWS Amplify, Google Maps API,
+Colors: #FAEA15
+rgb(250,234,21)
+
+#000000
+rgb(0,0,0)
 ​
-## AngelHack Hackathon Milestones
-- Identity verification form (Trulio API)
-- Food bank marketplace (Bootstrap)
-- Ethereum wallet (Metamask)
-- ERC20 Food token
+## Hackathon Hackathon Milestones
+- User Interace for Grocery Store Managers (React)
+- Syncing food inventory database with DataPage (AWS Amplify, DynamoDB)
+- Display route of farm and grocery store (Google Maps API)
 ​
-## Demo Photos
-
-Home page:
-![Home page](home.png)
-
-Dashboard page:
-![dashboard page](dashboard.png)
-
-ID Verification form page:
-![Verification Form](IDVerify.png)
