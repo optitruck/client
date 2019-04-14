@@ -16,7 +16,7 @@ The map tab will show the optimal route of the future shipment.
 
 <li>User</li>
 ​
-## Views
+Views
 <li>HomePage</li>
 <li>InputDataPage</li>
 <li>DataPage</li>
@@ -46,7 +46,7 @@ Map
 ## Other
 
 Languages: HTML, CSS, React, Node.js, 
-Technologies: AWS Amplify, Google Maps API,
+Technologies: AWS Amplify, Google Maps API
 Colors: #FAEA15
 rgb(250,234,21)
 
