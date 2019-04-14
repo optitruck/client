@@ -12,35 +12,36 @@ A user navigates to the home page where he will select the store that he wants t
 The map tab will show the optimal route of the future shipment.
 
 # Technical
-## Models
+
+Models
 
 <li>User</li>
 ​
-##Views
+Views
 
 <li>HomePage</li>
 <li>InputDataPage</li>
 <li>DataPage</li>
 <li>MapPage</li>
 
-## Routes
+Routes
 
-##HomePage
-
-<li>GET</li>
-<li>POST</li>
-
-##InputDataPage
+HomePage
 
 <li>GET</li>
 <li>POST</li>
 
-##DataPage
+InputDataPage
 
 <li>GET</li>
 <li>POST</li>
 
-##MapPage
+DataPage
+
+<li>GET</li>
+<li>POST</li>
+
+MapPage
 
 <li>Google Maps API</li>
 
@@ -48,6 +49,7 @@ The map tab will show the optimal route of the future shipment.
 
 Languages: HTML, CSS, React, Node.js, 
 Technologies: AWS Amplify, Google Maps API
+
 Colors: #FAEA15
 rgb(250,234,21)
 
