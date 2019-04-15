@@ -2,7 +2,8 @@ import React from 'react';
 import { Paper, Grid, TextField, Button} from '@material-ui/core';
 import Dropzone from 'react-dropzone';
 import arrow_drop_down from '../constants/svg/arrow_drop_down.svg'
-
+import papa from 'papaparse';
+import axios from 'axios';
 
 const baseStyle = {
     width: 200,
@@ -26,9 +27,11 @@ const baseStyle = {
 export default class InputDataPage extends React.Component{
     state = {
         itemName : "",
-        itemSupplied: 0,
+        itemSupplied: "",
         monthPurchased: "",
-        spoiledItem: 0
+        spoiledItem: "",
+        file: null,
+        oldFile: null
     }
 
     handleChange = name => event => {
@@ -37,21 +40,45 @@ export default class InputDataPage extends React.Component{
         });
     };
 
-    onDrop(files) {
-        this.setState({files});
-        if(files !== this.state.oldFiles){
+    onDrop(file) {
+        this.setState({file:file});
+        if(file !== this.state.oldFile){
             this.setState({convertButton:false})
         }
+        papa.parse(file[0], {
+            complete: function(results) {
+                console.log(results);
+            }
+        });
     }
 
     handleSumbmit = () =>{
         const { itemName, itemSupplied, monthPurchased, spoiledItem } = this.state;
-        console.log("Item Name: " + itemName + "\n" + "Item Supplied: "+ itemSupplied);
+        let da = [
+            {
+                itemname: itemName,
+                itemssupplied: +itemSupplied,
+                monthpurchased: monthPurchased,
+                itemsspoiled: +spoiledItem,
+            }
+        ]
+        let json = JSON.stringify(da);
+        let post_data = {json_da:json};
+
+        axios.post('https://cors-anywhere.herokuapp.com/http://localhost:3000/users', {
+            post_data       
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
         this.setState({
             itemName:"",
-            itemSupplied:0,
+            itemSupplied:"",
             monthPurchased:"",
-            spoiledItem: 0
+            spoiledItem: ""
         })
     }
 
@@ -62,7 +89,7 @@ export default class InputDataPage extends React.Component{
                     <Grid container direction="column" style={{paddingTop: '5%'}} alignItems="center">
                         <h2 className="input-header"> Upload Your Data File</h2>
                         <div className="middle-box">
-                            <Dropzone accept=".cvs"
+                            <Dropzone accept=".csv"
                                     onDrop={this.onDrop.bind(this)}>
                                 {({ getRootProps, getInputProps, isDragActive, isDragAccept, isDragReject, acceptedFiles, rejectedFiles }) => {
                                     let styles = {...baseStyle}
@@ -78,7 +105,7 @@ export default class InputDataPage extends React.Component{
                                         <div>
                                         {isDragAccept ? 'Drop' : 'Drag'} files here or click to select files
                                         </div>
-                                        <p>Only *.cvs file will be accepted</p>
+                                        <p>Only *.csv file will be accepted</p>
                                         <img src={arrow_drop_down} className="drop-logo" alt="arrow_drop_down"/>
                                         {isDragReject && <div>Unsupported file type...</div>}
                                     </div>

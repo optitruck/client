@@ -1,6 +1,5 @@
 import React from 'react';
-import { Paper, Grid, Typography, InputBase } from '@material-ui/core';
-import { SocialIcon } from 'react-social-icons';
+import { Paper, Grid, InputBase } from '@material-ui/core';
 
 export default class Footer extends React.Component{
     render(){
@@ -46,16 +45,16 @@ export default class Footer extends React.Component{
                         </Grid>
                         </div>
                     </Grid>
-                    <Grid container direction="row" justify="space-evenly" style={{marginTop:10}}>
+                    <Grid container direction="row" style={{marginTop:10}}>
                         <p className="copy-footer">
                             Copyright &copy;{new Date().getFullYear()} 
                             All rights reserved
                         </p>
                         <div>
                         <Grid container direction="row" justify="space-evenly">
-                            <SocialIcon url="http://facebook.com/jaketrent"/>    
+                            {/* <SocialIcon url="http://facebook.com/jaketrent"/>    
                             <SocialIcon url="http://twitter.com/jaketrent"/>
-                            <SocialIcon url="http://instagram.com/jaketrent"/>
+                            <SocialIcon url="http://instagram.com/jaketrent"/> */}
                         </Grid>
                         </div>      
                     </Grid>

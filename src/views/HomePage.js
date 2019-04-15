@@ -3,17 +3,31 @@ import { Paper, Grid, Typography, IconButton,
         Divider, InputBase, List, ListItem, Avatar,
         ListItemText
 } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import MoneyRounded from '@material-ui/icons/MoneyRounded';
+import ListIcon from '@material-ui/icons/List';
 import DirectionsIcon from '@material-ui/icons/Directions';
 import ImageIcon from '@material-ui/icons/Image';
-import report from '../constants/svg/report.svg';
-import { farms, cards1, cards2 } from '../constants/initialState.json';
-
+import axios from 'axios';
 
 export default class HomePage extends React.Component{
-    state = {
-        show: false,
+    constructor(props) {
+        super(props);
+        this.state = {
+            show: false,
+            data: []
+        }
+    }
+
+    componentDidMount(){
+        let self = this;
+        axios.get('https://cors-anywhere.herokuapp.com/https://salty-tor-23821.herokuapp.com/')
+        .then(function (response) {
+            self.setState({data:response.data});
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
     }
 
     handleList = () => {
@@ -22,13 +36,13 @@ export default class HomePage extends React.Component{
         })
     }
 
-    renderLists = (props, index) => (
-        <div key={index}>
+    renderLists = (props) => (
+        <div key={props.shopid}>
             <ListItem >
                 <Avatar>
                     <ImageIcon />
                 </Avatar>
-            <ListItemText primary={props.name}/>
+            <ListItemText primary={props.address}/>
             </ListItem>
             <li>
                 <Divider variant="inset" />
@@ -59,25 +73,21 @@ export default class HomePage extends React.Component{
                 <Paper className="home-paper-search">
                     <IconButton className="home-iconButton" aria-label="Menu">
                     </IconButton>
-                    <InputBase className="home-input" placeholder="Enter Your Store Address" />
-
+                    <InputBase className="home-input" placeholder="Get your store recomendation" />
+                    {/* <Typography className="home-input">Get your store recomendation</Typography> */}
                     {/* <Paper className="home-input-paper" square={true} onClick={() => console.log("click")}>
                         <h6 className="home-header" style={{marginTop: 10}}>Search</h6>
                     </Paper> */}
                     
-                    <IconButton onClick={this.handleList} className="home-iconButton" aria-label="Search">
-                        <SearchIcon />
-                    </IconButton>
-                    <Divider className="home-divider" />
-                    <IconButton color="primary" className="home-iconButton" aria-label="Directions">
-                        <DirectionsIcon />
+                    <IconButton onClick={this.handleList} color="primary" className="home-iconButton" aria-label="Directions">
+                        <ArrowDownwardIcon />
                     </IconButton>
                 </Paper>
                 { 
                     show && 
                     <div style={{marginTop: 5}}>
                         <List className="home-list">
-                            {farms.map((farm,index) => (this.renderLists(farm,index)))}
+                            {this.state.data.map(farm => (this.renderLists(farm)))}
                         </List>
                     </div>  
                 }
@@ -85,12 +95,32 @@ export default class HomePage extends React.Component{
             </Paper>
             <Paper className="home-middle-paper" square={true}>
                 <Grid container direction="column" alignItems="center">
-                    <Typography variant='h3' style={{marginTop: '5%'}}>3 Key Benefits of Lemon</Typography>
+                    <Typography variant='h3' style={{marginTop: '10%'}}>Lemon's Key Benefits</Typography>
                     <p className="home-middle-subheader">
-                        Minimize monetary losses, reduce food waste, get customer behavior insights
+                        Minimize monetary losses, reduce food waste, and get customer behavior insights
                     </p>
-                    <Grid style={{marginTop: '5%'}} container direction="row" justify="space-evenly" alignItems="center">
-                        {cards1.map((card,index) => (this.rednerCards(card,index)))}
+                    <Grid style={{marginTop: '10%'}} container direction="row" justify="space-evenly" alignItems="center">
+                    <Paper className="home-paper-card">
+                        <Grid container direction="column" justify="space-evenly" style={{marginLeft: '10%'}}>
+                            <MoneyRounded style={{fontSize: 70, marginTop: '7%'}} />
+                            <Typography variant='h4' style={{marginTop: '7%'}}>Minimize Monetary Losses</Typography>
+                            <Typography variant='subtitle1' style={{marginTop: '7%'}}>A more accurate shipment forecast will reduce <br/>the number of wasted food items</Typography>
+                        </Grid>
+                    </Paper>
+                    <Paper className="home-paper-card">
+                        <Grid container direction="column" justify="space-evenly" style={{marginLeft: '10%'}}>
+                            <DirectionsIcon style={{fontSize: 70, marginTop: '7%'}} />
+                            <Typography variant='h4' style={{marginTop: '7%'}}>Reduce Food Loss</Typography>
+                            <Typography variant='subtitle1' style={{marginTop: '17%'}}>Track items that are more frequently wasted</Typography>
+                        </Grid>
+                    </Paper>
+                    <Paper className="home-paper-card">
+                        <Grid container direction="column" justify="space-evenly" style={{marginLeft: '10%'}}>
+                            <ListIcon style={{fontSize: 70, marginTop: '7%'}} />
+                            <Typography variant='h4' style={{marginTop: '7%'}}>Gather Customer Behavior Insights</Typography>
+                            <Typography variant='subtitle1' style={{marginTop: '7%'}}>Gather knowledge on which food items are sold <br/> and wasted</Typography>
+                        </Grid>
+                    </Paper>
                     </Grid>
                 </Grid>
             </Paper>

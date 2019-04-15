@@ -66,11 +66,12 @@
 
 .home-middle-paper{
     height: 850px;
+    background: linear-gradient(-270deg, rgba(231, 229, 212, 0.7), rgba(231, 229, 212, 0.7));
 }
 
 .home-paper-card{
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 400px;
     background: bisque;
 }
 
@@ -86,6 +87,8 @@
 
 .input-top-paper{
     height: 500px;
+    background: linear-gradient(-270deg, rgba(231, 229, 212, 0.7), rgba(231, 229, 212, 0.7));
+
 }
 
 .input-middle-paper{
@@ -113,6 +116,8 @@
     margin-top: 1%;
     height: 150px;
     width: 900px;
+    /* background: linear-gradient(-270deg, rgba(231, 229, 212, 0.7), rgba(231, 229, 212, 0.7)); */
+
 }
 
 .input-form{
@@ -155,5 +160,10 @@
 .copy-footer{
     color: white;
     margin-top: 2%;
-    margin-left: -100px;
+    margin-left: 9%;
+}
+
+.logo-header{
+    width: 140px;
+    height: 70px;
 }

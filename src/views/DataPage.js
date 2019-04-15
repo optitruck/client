@@ -1,12 +1,12 @@
 import React from 'react';
-import { Paper, Grid } from '@material-ui/core';
-import Table from '../components/Table';
+import { Paper } from '@material-ui/core';
+import TableComp from '../components/TableComp';
 
 export default class DataPage extends React.Component{
     render(){
         return(
             <Paper className="data-container">
-                <Table/>
+                <TableComp/>
             </Paper>
         )
     }

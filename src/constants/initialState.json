@@ -29,41 +29,6 @@
             "header":"Gather Customer Behavior Insights",
             "sentence":"Gather knowledge on which food items are sold and wasted"
         }
-    ],
-    "cards2" :[
-        {
-            "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
-        }, 
-        {
-            "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
-        }, 
-        {
-            "icon":"1",
-            "header":"Nice",
-            "sentence":"Nice Nice"
-        }
-    ],
-
-    "cards3" : [
-        {
-            "icon": "1",
-            "header": "Nice",
-            "sentence": "Nice Nice"
-        },
-        {
-            "icon": "1",
-            "header": "Nice",
-            "sentence": "Nice Nice"
-        },
-        {
-            "icon": "1",
-            "header": "Nice",
-            "sentence": "Nice Nice"
-        }
     ]
 }
 
