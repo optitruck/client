@@ -18,7 +18,7 @@
   <a href="#license">License</a>
 </p>
 
-![alt text](https://github.com/VietDinh17/perfect-pitch/blob/master/logo/demo.PNG)
+![alt text](https://github.com/optitruck/client/blob/master/logo/demo.PNG)
 
 ## Problem/Audience
  
@@ -38,14 +38,8 @@ The map tab will show the optimal route of the future shipment.
 
 ## Other
 
-Languages: HTML, CSS, React, Node.js, 
-Technologies: AWS Amplify, Google Maps API
-
-Colors: #FAEA15
-rgb(250,234,21)
-
-#000000
-rgb(0,0,0)
+* Languages: JavaScript
+* Technologies: React, Node.js, AWS Amplify, Google Maps API
 
 ## Hackathon Milestones
 - User Interace for Grocery Store Managers (React)
