@@ -18,7 +18,7 @@
   <a href="#license">License</a>
 </p>
 
-![alt text](https://github.com/VietDinh17/perfect-pitch/blob/master/images/demo.PNG)
+![alt text](https://github.com/VietDinh17/perfect-pitch/blob/master/logo/demo.PNG)
 
 ## Problem/Audience
  
@@ -32,9 +32,9 @@ The map tab will show the optimal route of the future shipment.
 
 ## Views
 * HomePage
-InputDataPage
-DataPage
-MapPage
+* InputDataPage
+* DataPage
+* MapPage
 
 ## Other
 
