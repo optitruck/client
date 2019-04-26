@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://devpost.com/software/perfect-pitch-ydqptv"><img src="Logo_Lemon_Transparent_e" alt="caretaker" width="200"></a>
+  <a href="https://devpost.com/software/perfect-pitch-ydqptv"><img src="https://github.com/optitruck/client/blob/master/logo/Logo_Lemon_Transparent_e.png" alt="caretaker" width="200"></a>
   <br>
     Lemon
   <br>
